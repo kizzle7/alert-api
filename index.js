@@ -1,6 +1,7 @@
 var express = require('express')
 var http = require('http')
-var PORT = 4000
+const PORT = process.env.PORT || 4000;
+
 var config =  require('./serverExpress/config')
 var appServer =  express();
 const cors = require('cors');
