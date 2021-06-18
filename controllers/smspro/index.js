@@ -1,5 +1,5 @@
-const accountSid = 'ACa482f32fbd537c994f0afbc5c87ef680';
-const authToken = 'ef84c6952bbcb5f6a6eed863a9bdc13a';
+const accountSid = 'AC8426bfe06e17eecf074b608f27977f55';
+const authToken = '2020354a0d721e32009b06c02e88d823';
 const client = require('twilio')(accountSid, authToken);
 const nodemailer = require('nodemailer');
 const top = "Hello Yewande,\nkindly find your 1st semester examination result sent to you!. \nCSC401: A, CSC403: B, CSC 405:C,  407:B, 409: A, 411: C, 413: A, 415: B: GPA:4.56, CGPA: 3.95, TLU:61"
@@ -11,8 +11,8 @@ const top = "Hello Yewande,\nkindly find your 1st semester examination result se
       client.messages
         .create({
            body:  req.body.semester == "First Semester" ? topSms : topSmsSec,
-           from: +15163369914,
-           to: +2347036902017,
+           from: +17739858114,
+           to: +2348165153658,
          })
         .then(message =>  res.json({message:'success'})
 )
